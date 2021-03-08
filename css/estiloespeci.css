@@ -1,0 +1,124 @@
+.informacion{
+    display: flex;
+    justify-content: center;
+    flex-wrap:inherit;
+}
+.informacion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(/img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.colu1 > p{
+    color: black;
+    font: 20px "Comic Sans MS";
+
+}
+
+h2{
+    text-align: left;
+}
+.colu1{
+    margin-right: auto;
+    margin-left: 200px;
+    margin-top: 50px;
+    
+}
+.colu1 p{
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+.colu2{
+    margin-right: auto;
+    margin-top: 40px;
+    margin-left: -120px;
+}
+.polerah {
+    width: 700px;
+    height: 346px;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+.poleran{
+    width: 700px;
+    height: 346px;
+    margin-top: 30px;
+}
+.poleram{
+    width: 700px;
+    height: 216px;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+@media only screen and (max-width: 1640px){
+    .informacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .colu1, .colu2{
+        margin: 0;
+        margin-top: 30px;
+    }
+    .colu2{
+        margin-bottom: 30px;
+        margin-left: 100px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .polerah, .poleran{
+        width: 560px;
+        height: 276.8px;
+    }
+    .poleram{
+        width: 560px;
+        height: 172.8px;
+    }
+    .colu2{
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 625px){
+    .informacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .colu1{
+        width: 300px;
+        margin: 0;
+    }
+    .colu1 p{
+        width: 300px;
+    }
+    .polerah, .poleran{
+        width: 373px;
+        height: 184px;
+    }
+    .poleram{
+        width: 373px;
+        height: 115.2px;
+    }
+    .colu2{
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 360px){
+    .polerah, .poleran{
+        width: 248px;
+        height: 122px;
+    }
+    .poleram{
+        width: 248px;
+        height: 76.8px;
+    }
+}
+
