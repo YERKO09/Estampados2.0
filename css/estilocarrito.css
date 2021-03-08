@@ -1,82 +1,13 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-header{
-    background-color: #202020;  
-}
-
-.titulo{
-    display: flex; 
-    height: 182px;
-    
-    justify-content: center;
-    align-items: center;
-}
-
-.logo{
-    width: 10%;
-    margin-right: auto;
-    float: left;
-    margin-left: 50px;
-    margin-top: 5px;
- 
-}
-
-.h1{    
-    /* width: 100%; */
-    font: 25px "Comic Sans MS";
-    color: rgb(12, 134, 190);
-    margin-right: auto;
-    margin-left: -190px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-.logo > img{
-    width: 218px;
-    height: 195px;
-}
-nav{
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-.links{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;    
-}
-
-.links>a{
-    display: flex;
-    color:red;
-    font-size: 17px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;   
-    padding: 10px 50px;
-    border-bottom: 5px solid transparent;
-    transition: border .3s ease;/* en este caso solo se aplicara al borde*/ 
-}
-
-.links>a:hover{
-    border-bottom: 3px solid rgb(255, 0, 0);
-}
-
-/*carrito*/
 .carro{
     display: flex;
     flex-direction: row;
     height: 1000px;
+}
+
+.carro span{
+    color: green;
+    font-size: 40px;
+    margin-left: 20px;
 }
 
 article{
@@ -101,12 +32,14 @@ article>div>div{
 }
 
 
-article>div>section{
+article section{
+    background-color: rgb(202, 202, 202);
     margin-top: 4em;
     padding: 1em;
     border: 2px solid rgb(76, 76, 77);
     border-radius: 50px;
     height: 50%;
+
 }
 
 article >div>input{
@@ -134,98 +67,19 @@ aside>h1{
     margin-bottom: 1em;
 }
 
-
-
-/*Solo para footer*/
-footer{
-    background: #202020;
-    width: 100%;
-    color: rgb(12, 190, 12);
-    padding: 40px;
-}
-
-.contenedor_footer{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em; /*Separa columnas--propiedad de Flex*/
-    justify-content: space-between;
-    width: 100%;
-}
-
-.contenedor_footer >div>h1{
-    font-size: 22px;
-}
-
-.columna1{
-    max-width: 400px;
-}
-
-.columna1 > p{
-    font-size: 16px;
-    color: #C7C7C7;
-    margin-top: 20px;
-}
-
-.columna2{
-    max-width: 300px;
-}
-
-.fila{
-    margin-top: 20px;
-    display: flex;
-}
-
-.fila>ol{
-    list-style:none;
-}
-
-.fila>ol>li>a>img{
-    width: 35px;
-    height: 35px;
-    margin-top: 10px;
-}
-
-.fila>p{
-    margin-top: 10px;
-    margin-left: 20px;
-    color: #C7C7C7;
-}
-
-.columna3{
-    max-width: 400px;
-}
-
-.fila2{
-    margin-top: 20px;
-    display: flex;
-    height: 30px;
-}
-
-.fila2 > img{
-    background-color: rgb(82, 62, 136);
-    width: 35px;
-    height: 35px;
-}
-
-.fila2 > label{
-    margin-top: 10px;
-    margin-left: 20px;
-    color: #C7C7C7;
-}
-
-.copyright{
-    margin-top: 20px;
-    font-size: 16px;
-    color: #C7C7C7;
+.pagos{
+    background-color: rgb(202, 202, 202);
+    width: 97%;
+    margin-bottom: 1em;
     text-align: center;
-    width: 100%;
+
 }
 
-.copyright>span>a{
-    text-decoration: none;
-    color:white;
-    font-weight: bold;
+.pagos img{
+    width: 60px;
+    height: 35px;
 }
+
 
 
 @media (max-width: 786px){
